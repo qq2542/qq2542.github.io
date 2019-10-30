@@ -67,9 +67,72 @@
 	text-align: center;
 	color: #fff;
 }
+*,
+::before,
+::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;   /*主流移动端浏览器兼容*/
+	-webkit-tap-highlight-color:transparentl;    /*清除高亮效果*/
+}
+body{
+	font-size: 14px;
+	color: #333;
+	font-family: 'Microsoft yahei',sans-serif;
+	background-color:#f5f5f5;;
+}
+ul,ol{
+	list-style: none;
+}
+a{ 
+   text-decoration: none;
+   color: #333;
+}
+linput,textarea{
+	outline: 0;
+	border:0;
+	resize: 0;
+	-webkit-appearance: none;   /*清除移动端输入框特有的样式*/
+}   
+/* common css 共用样式 */
+.jd_container .banner{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.jd_container .banner .banner_bigpic li a{
+	width: 100%;
+	display: block;
+}
+/* 导航栏 */
+.jd_container .nav{
+	width: 100%;
+	
+}
+.jd_container .nav ul li{
+	float: left;
+	width:25%;
+}
+.jd_container .nav ul a{
+	display: block;
+	wodth: 100%;
+}
+.jd_container .nav ul 1i img{
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin: 0 auto;
+}
+.jd_container .nav ul span{
+	display: block;
+	font-size: 12px;
+	color: #666;
+	padding:5px 0;
+	text-align: center;
+}
 </style>
 </head>
-
 <body>
 <div class="jd_container">
      <!-- 顶部搜素 -->
@@ -83,5 +146,24 @@
            <a href="#" class="login">登陆</a>
      </div>
      </header>
+<!--  轮播图 -->
+<div class="banner">
+     <ul class="banner_bigpic">
+         <li><a href="#"><img src="imgs/l8.jpg" alt=""></a></li>
+         </ul>
+       </div>
+   <!-- 导航栏 -->
+   <nav class="nav">
+   <ul class="cleafix">
+   <li><a href="#"><img src="imgs/nav0.png" alt=""><span>分类</span></a></li>
+   <li><a href="#"><img src="imgs/nav1.png" alt=""><span>分类</span></a></li>
+   <li><a href="#"><img src="imgs/nav2.png" alt=""><span>分类</span></a></li>
+   <li><a href="#"><img src="imgs/nav3.png" alt=""><span>分类</span></a></li>
+   <li><a href="#"><img src="imgs/nav4.png" alt=""><span>分类</span></a></li>
+   <li><a href="#"><img src="imgs/nav5.png" alt=""><span>分类</span></a></li>
+   <li><a href="#"><img src="imgs/nav6.png" alt=""><span>分类</span></a></li>
+   <li><a href="#"><img src="imgs/nav7.png" alt=""><span>分类</span></a></li>
+     </li>
+   </nav>
 </body>
 </html>
